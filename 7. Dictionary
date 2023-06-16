@@ -1,0 +1,51 @@
+#store data in pair data values 'key:value'
+dict1 = {'a':1, 'b':2, 'c':3}
+print(dict1)
+#type
+print(type(dict1))
+#amount of pair values
+print(len(dict1))
+#find value from 'key'
+print(dict1['a'])
+#output value of a
+print(dict1.get('a'))
+
+#output keys only
+print(dict1.keys())
+#output values only
+print(dict1.values())
+#output keys and values
+print(dict1.items())
+
+#not allow duplicates
+dict1['a'] = 1
+print(dict1)
+
+#can add new items
+dict1['d'] = 4
+print(dict1)
+
+#can modify values
+dict1['a'] = 0
+print(dict1)
+
+#other method to modify
+dict1.update({'a':1})
+print(dict1)
+
+#remove key and value
+dict1.pop('d')
+print(dict1)
+del dict1['c']
+print(dict1)
+
+#add key and assigned value of another dictonary
+dict1['c'] = {'a':1, 'b':2}
+print(dict1)
+
+#create empty dict
+dict2 = {}
+print(dict2)
+#or
+dict3 = dict()
+print(dict3)

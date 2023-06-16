@@ -1,0 +1,63 @@
+#unmutable/cannot be changed
+
+tuple_item = ('item1', 'item2', 'item3')
+
+print(tuple_item)
+print(type(tuple_item))
+
+tuple_number = (1, 2, 3)
+print(tuple_number)
+print(type(tuple_number))
+
+tuple_reapet = ('Combine',) * 4
+print(tuple_reapet)
+print(type(tuple_number))
+
+mixed_tuple = ('A', 1, ('A', 1))
+print(mixed_tuple)
+print(type(mixed_tuple))
+
+#connot add values but you can combine values to tuple
+tuple_combine =tuple_item + tuple_number
+print(tuple_combine)
+print(type(tuple_combine))
+
+#specify single values in a tuple with exact amount of items in the list
+item1, item2, item3 = tuple_item
+print(item1)
+print(item2)
+print(item3)
+
+#identify if specified string is in the tuple
+print('item2' in tuple_item)
+print('item3' in tuple_item)
+print('item4' in tuple_item)
+
+#identify the index of the string/item
+print(tuple_item.index(item2))
+
+#shorter method to find index with '[]'
+print(tuple_item[0])
+print(tuple_item[1])
+print(tuple_item[2])
+
+#starts with 0
+print(len(tuple_item))
+
+#finn the last values in the tuple with '-'
+print(tuple_item[-1])
+print(tuple_item[-2])
+
+#extract a number of values from the tuple
+print(tuple_item[0:2])
+#shorter version of the top code
+print(tuple_item[:2])
+#counting from the end
+print(tuple_item[-3:-1])
+
+string1 = "I am a string!"
+print(string1[0:4])
+#exclude the last character
+print(string1[:-1])
+#out put the last character only
+print(string1[-1])

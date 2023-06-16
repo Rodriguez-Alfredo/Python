@@ -1,0 +1,131 @@
+#define single line string with single or double quotes
+string1 = "I am a string"
+string2 = 'I am a string'
+
+print(string1)
+print(string2)
+
+#triple quotes for multiline string
+string3 = """I am a long
+long
+string!"""
+print(string3)
+
+#use a word with a quote
+string4 = 'I\'m a string'
+print(string4)
+#other method to use a quote in a string
+string5 = "I'm a string"
+print(string5)
+
+#making new line in a string with \n
+string6 = 'I\'m a string\nI\'m on a new line'
+print(string6)
+
+#escape a backslash and 
+string_6 = '\\ \x41\x42\x43'
+print(string_6)
+
+#different methods to add multiple values of a string
+string7 = 'aaaaaaaaaa'
+print(string7)
+string_7 = 'a' * 10
+print(string_7)
+
+#identify the length of a string
+print(len(string_7))
+
+#identify if a string is stored in a variable ('string' is in the variable string4)
+print('string' in string4)
+
+#identify if a string starts with a specific value
+print(string4.startswith('I'))
+
+#identify the index of a string 
+print(string4.index('string'))
+
+#modify entire string 
+print(string4.upper())
+print(string4.lower())
+
+#remove unwanted values in string with .strip
+messy_string = '  Messy string!  '
+print(messy_string)
+print(messy_string.strip())
+
+#replace a value in a string
+print(messy_string.replace('!','?'))
+print(messy_string.replace('string', 'example'))
+
+#combine modifiation functions
+print(messy_string.replace('!', '?').strip())
+
+#make string into a list
+print(messy_string.split())
+#string with single item in list
+print(messy_string.split(','))
+
+string_4 = 'I am string!'
+print(string_4)
+print(string_4.encode())
+print(string_4.encode('utf-8'))
+
+#patting and consistent length
+print(string_4.rjust(25))
+#show spacing added
+print(string_4.rjust(25, 'X'))
+
+print(string_4.ljust(25))
+print(string_4.ljust(25,'X'))
+
+#concatenating strings
+print('I am ' + 'a string')
+
+#concatenate different functions with strings, convert numbers to string (str())
+print('string 4 is ' + str(len(string4)) + ' characters long!')
+
+#different output in number values and string values
+print(1 + 1)
+print('1' + '1')
+print(type('1' + '1'))
+
+#formate specified value and inserts in the place holder
+#place holder with {}
+print('string 4 is {} characters long!.'.format(len(string4)))
+#didn't have to make number value into a string
+
+#add multiple values with place holders
+print('{} {} {}'.format(len(string4), 5.0, 0x12))
+
+#specify location of values in the place holder
+print('{0} {2} {1}'.format(len(string4), 5.0, 0x12))
+
+#specify the name of the place holder
+print('{length}'.format(length=len(string4)))
+
+#define formated string literals with appeding 'f'
+length = len(string4)
+print(f'string 4 is {length} characters long!')
+
+print('string 4 is {length} characters long!'.format(length=len(string4)))
+
+#converting length to flot with 'f' and definding how many decimal spaces with '.2'
+print('string 4 is {length:.2f} characters long!'.format(length=len(string4)))
+
+#specify as hex value
+print('string 4 is {length:x} characters long!'.format(length=len(string4)))
+
+#specify as binary value
+print('string 4 is {length:b} characters long!'.format(length=len(string4)))
+
+#specify as octol value
+print('string 4 is {length:o} characters long!'.format(length=len(string4)))
+
+#same print specifiers as above, define
+print('string 4 is %d characters long!' % len(string4))
+
+#flot
+print('string 4 is %f characters long!' % len(string4))
+
+#hex
+print('string 4 is %x characters long!' % len(string4))

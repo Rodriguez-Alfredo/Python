@@ -1,0 +1,61 @@
+name = 'neut'
+print(name)
+
+name_length = 4
+print(name_length)
+
+#redefined in the same line
+name, name_length = 'Neut', 4
+
+#identify types
+print(type(name))
+print(type(name_length))
+
+#redifine type int to string by adding ''
+name_length = '4'
+
+#redine string back to int by adding int
+name_length = int('4')
+print(type(name_length))
+
+#case sensitive
+name_length = 4
+Name_length = 5
+print(name_length)
+print(Name_length)
+
+#list by using = [,,,]
+name_list = ['neut','247CTF', 'asd']
+print(type(name_list))
+#specify object in list by placement
+name1, name2, name3 = name_list
+print(name1)
+print(name2)
+print(name3)
+
+#tuple
+name_tuple = ('neut','247CTF')
+print(type(name_tuple))
+
+#Dictonary
+name_dictionary = {'neut': 4, '247CTF': 6}
+print(type(name_dictionary))
+
+#boolean
+name_boolean = False
+print(type(name_boolean))
+
+#range
+name_range = range(6)
+print(type(name_range))
+
+#bytes
+name_bytes = b'neut2'
+print(type(name_bytes))
+
+print(name_tuple)
+print(name_list)
+print(name_dictionary)
+print(name_boolean)
+print(name_range)
+print(name_bytes)

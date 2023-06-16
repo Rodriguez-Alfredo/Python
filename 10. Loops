@@ -1,0 +1,57 @@
+a = 1
+print(a)
+#incriment
+a += 1
+print(a)
+a += 1
+print(a)
+
+a = 1
+while a < 5:
+  a += 1
+  print(a)
+
+#i converts to 0 then add 6 to it, i converts to 1 then add by 6 etc.
+for i in [0, 1, 2, 3, 4]:
+  print(i+6)
+
+print('----')
+#short version 
+for i in range(5):
+  print (i+6)
+
+print('----')
+#nested loops
+for i in range(3):
+  for j in range(3):
+    print (i,j)
+
+print('----')
+#loop control statement
+for i in range(5):
+  if i == 2:
+    break
+  print(i)
+
+print('----')
+#skips 2
+for i in range(5):
+  if i == 2:
+    continue
+  print(i)
+
+print('----')
+#nothing changes but contiues
+for i in range(5):
+  if i == 2:
+    pass
+  print(i)
+
+print('----')
+
+for c in 'string':
+  print(c)
+
+for key, value in {'a':1, 'b':2, 'c':3}.items():
+  print(key, value)
+  

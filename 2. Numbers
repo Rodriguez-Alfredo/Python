@@ -1,0 +1,42 @@
+#int is whole numbers
+#float is decimal numbers
+t1_int = 1
+t1_float = 1.0
+
+print(t1_int)
+print(t1_float)
+
+print(type(t1_int))
+print(type(t1_float))
+
+t1_complex = 3.14j
+print(t1_complex)
+print(type(t1_complex))
+
+#define number by hexadecimal notation
+t1_hex = 0xa
+print(t1_hex)
+print(type(t1_hex))
+
+#convert from octal notations
+t1_octal = 0o10
+print(t1_octal)
+print(type(t1_octal))
+
+#math equation with a mix of hex and octal forms
+print(1 + 0x1 + 0o1)
+
+#absolute values
+print(abs(4))
+print(abs(-4))
+
+#round up a flot number to an int 
+print(round(8.4))
+print(round(8.5))
+print(round(8.6))
+
+#bin to show binary value of a number
+print(bin(8))
+
+#hex to show hex value of number
+print(hex(8))

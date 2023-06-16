@@ -1,0 +1,115 @@
+#def We defind a function
+
+def function1():
+  print('Hello from function1')
+
+#calling function
+function1()
+function1()
+
+#just return the function 'not printed'
+def function2():
+  return 'Hello from function2'
+
+function2()
+
+#assigned function2 into a variable
+return_from_function = function2()
+print(return_from_function)
+
+#pass values to functions
+def function3(s):
+  print('\t{}'.format(s))
+
+function3('parameter')
+
+#multiple arguments
+def function4(s1 ,s2):
+  print('{} {}'.format(s1, s2))
+
+function4('s1', 's2')
+function4('any', 'thing')
+#change order by assigning object to variable
+function4(s1='thing', s2='any')
+
+def function5(s1='default'):
+  print('{}'.format(s1))
+
+#no value assinged to function5 it will print default
+function5()
+
+function5('anything')
+
+
+#def function to handle an uknown or variable amount of arguments with asterisk
+def function6(s1, *more):
+  print('{} {}'.format(s1, ' '.join([s for s in more])))
+
+function6('function6')
+function6('function6', 'a')
+function6('function6', 'a', 'b', 'c')
+
+#dictionary argument
+def function7(**ks):
+  for a in ks:
+    print(a, ks[a])
+
+function7(a = '1', b =2, c = 3)
+#dic can be shortened or made longer 
+function7(a = '1', b = '2', c =  '3', d = '4', e = '5')
+
+def function8(s, f, i, l):
+  print(type(s))
+  print(type(f))
+  print(type(i))
+  print(type(l))
+
+function8('string', 1.0, 4, ['l', 'i', 'f', 's'])
+
+v = 100
+print(v)
+
+def function9():
+  #defind variable in the 'def'. Outside of the defined function
+  v = 5
+  v += 5
+  print(v)
+
+function9()
+print(v)
+
+#calculate variable outside of the 'def' by using 'global'
+def function9_2():
+  #defind variable in the 'def'. Outside of the defined function
+  global v
+  v += 2
+  print(v)
+
+function9_2()
+print(v)
+
+#functions can call other functions
+def function10():
+  print('Hello from function 10')
+
+def function11():
+  function10()
+  print('Hello from function 11')
+
+function11()
+
+#functoin call themself = Recursion
+def function12(x):
+  print(x)
+  if x > 0:
+    function12(x-1)
+
+function12(5)
+
+#using 'while'
+def function13(x):
+  while x >= 0:
+    print(x)
+    x -= 1
+
+function13(5)

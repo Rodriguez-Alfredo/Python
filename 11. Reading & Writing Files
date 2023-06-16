@@ -1,0 +1,50 @@
+#open file and iterate
+f = open('top-100.txt')
+print(f)
+
+#specify mode of operation
+f = open('top-100.txt', 'rt')
+
+#show the list
+print(f.read())
+
+#specify each line to modify
+print(f.readlines())
+
+#empty since file was already read
+print(f.readlines())
+
+#reset with 'seek' allowing to show list again
+f.seek(0)
+print(f.readlines())
+
+#output eachline and remove extra characters
+f.seek(0)
+for line in f:
+  print(line.strip)
+#maybe use for passwork cracking or bruteforce attack
+
+#once finished reading file
+f.close
+
+#create a file
+f = open('test.txt', 'w')
+#add text to file
+f.write('test line!')
+f.close()
+
+#add to file with append 'a'
+open('test.txt', 'a')
+f.write('Test line two!')
+
+#file handle
+#name
+print(f.name)
+#closed or not
+print(f.close)
+#mode when opened
+print(f.mode)
+
+with open('rockyou.txt', encoding = 'latin-1') as f:
+  for line in f:
+    pass

@@ -1,0 +1,43 @@
+print(1)
+#indent error
+  print(2)
+
+#file not found error
+f = open('it_does_not_exist.txt')
+
+#fix error 'file does not exist' with try
+try:
+  f = open('it_does_not_exist.txt')
+else:
+  print('File does not exist!')
+
+
+try:
+  f= open('Another file.txt')
+#print out custom error message
+except FileNotFoundError:
+  print('This file does not exist!')
+except Exception as e:
+  print(e)
+#no error
+finally:
+  print('This message!')
+
+
+n == 100
+if n == 0:
+  raise Exception("n can't be 0!")
+
+#if string was assigned to n
+if tupe(n) is not int:
+  raise Exception('n must be an int!')
+
+#devide
+print(1/n)
+
+
+n == 1 
+assert(n != 0)
+print(1/n)
+
+#Exceptions & Asserts
